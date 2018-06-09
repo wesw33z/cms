@@ -395,16 +395,18 @@ Route::get('post/{id}/{name}/{password}', 'PostsController@show_post');
 //});
 
 
-Route::get('/tag/post', function(){
+//Route::get('/tag/post', function(){
+//
+//    $tag = Tag::find(2);
+//
+//        foreach($tag->posts as $post)
+//
+//        echo $post->title . "<br>";
+//
+//
+//});
 
-    $tag = Tag::find(2);
 
-        foreach($tag->posts as $post)
-
-        echo $post->title . "<br>";
-
-
-});
-
-
+// CRUD - Application
+Route::resource('/posts', 'PostsController');
 
