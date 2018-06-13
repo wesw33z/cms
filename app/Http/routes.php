@@ -407,6 +407,10 @@ Route::get('post/{id}/{name}/{password}', 'PostsController@show_post');
 //});
 
 
-// CRUD - Application
-Route::resource('/posts', 'PostsController');
+//// CRUD - Application
+//Route::resource('/posts', 'PostsController');
 
+Route::get('/test', function(){
+
+    echo phpinfo();
+});

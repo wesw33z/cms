@@ -13,9 +13,10 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        return "its working the number is " . $id;
+        $posts = Post::all();
+        return view('posts.index', compact('posts'));
     }
 
     /**
@@ -40,7 +41,7 @@ class PostsController extends Controller
         //
 //        return $request->all();
         Post::create($request->all());
-
+        return redirect('posts');
 //        $input = $request->all();
 //        $input['title'] = $request->title;
 //        Post::create($request->all());
