@@ -20,9 +20,9 @@ use App\Country;
 
 //Route::resource('posts', 'PostsController');
 
-Route::get('/contact', 'PostsController@contact');
-
-Route::get('post/{id}/{name}/{password}', 'PostsController@show_post');
+//Route::get('/contact', 'PostsController@contact');
+//
+//Route::get('post/{id}/{name}/{password}', 'PostsController@show_post');
 
 //Route::get('/post/{id}', 'PostsController@index');
 
@@ -407,10 +407,9 @@ Route::get('post/{id}/{name}/{password}', 'PostsController@show_post');
 //});
 
 
-//// CRUD - Application
-//Route::resource('/posts', 'PostsController');
-
-Route::get('/test', function(){
-
-    echo phpinfo();
-});
+// CRUD - Application
+//Route::resource('/posts', 'PostsController')
+//
+//
+//
+//});
